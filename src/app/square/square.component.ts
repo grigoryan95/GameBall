@@ -36,7 +36,7 @@ export class SquareComponent {
     this.isDisable = false;
     setTimeout(() => {
       this.top = Math.random() * (window.innerHeight - 200);
-      this.left = Math.random() * (window.innerHeight * 0.8 - -100);
+      this.left = Math.random() * (window.innerHeight * 0.8 - -450);
       this.start()
     },this.time)
   }
