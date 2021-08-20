@@ -1,0 +1,54 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  .left {
+    background-color: #efff00;
+    width: 80%;
+    position: relative;
+  }
+  .right {
+    width: 20%;
+  }
+  .ball:disabled,
+  .ball[disabled]{
+    cursor: not-allowed;
+  }
+  button {
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rebeccapurple;
+    &.start {
+      background-color: paleturquoise;
+    }
+    &.reset {
+      background-color: red;
+      margin-top: 10px;
+    }
+  }
+}
+
+.ball {
+  position: absolute;
+  background-color: aquamarine;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  transition: 200ms;
+}
+
+.rightContent {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  font-size: 25px;
+  font-family: cursive;
+  .level {
+    color: crimson;
+  }
+}
+

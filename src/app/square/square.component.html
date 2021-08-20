@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="left" (click)="inContainer()"></div>
+    <div class="right">
+      <button class="start" (click)="start()">Start</button>
+      <button class="reset" (click)="reset()">Reset</button>
+
+      <div class="rightContent">
+        <div class="level">Level {{level}}</div>
+        <div class="click">Click {{click}}</div>
+      </div>
+
+    </div>
+    <button
+      id="sharik"
+      class="ball"
+      (click)="ballClick()"
+      [disabled]="isDisable"
+      [ngStyle]="{
+       top: top + 'px',
+       left: left + 'px',
+       width: width + 'px',
+       height: height + 'px'
+       }"
+    ></button>
+</div>
+
+
