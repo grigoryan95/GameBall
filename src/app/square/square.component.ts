@@ -14,6 +14,9 @@ export class SquareComponent {
   time:number = 1000;
   height:number = 200;
   width:number = 200;
+  r: number = 59
+  g: number = 177
+  b: number = 111
 
   inContainer(): void {
     this.click++;
@@ -24,6 +27,9 @@ export class SquareComponent {
     this.time *= 0.75;
     this.width -= 5;
     this.height -= 5;
+    this.r = Math.floor(Math.random() * 255)
+    this.g = Math.floor(Math.random() * 255)
+    this.b = Math.floor(Math.random() * 255)
   }
 
   reset(): void {
