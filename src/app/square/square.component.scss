@@ -3,12 +3,17 @@
   height: 100vh;
   display: flex;
   .left {
-    background-color: #efff00;
+    background-image: url("https://azteca.com.ua/wp-content/uploads/2020/03/futbolnoe-pole.jpg");
+    background-size: 100% 100%;
     width: 80%;
     position: relative;
   }
   .right {
     width: 20%;
+    background-color: black;
+    background-image: url("https://icons.iconarchive.com/icons/giannis-zographos/spanish-football-club/256/FC-Barcelona-icon.png");
+    background-repeat: repeat;
+    background-size: 55px;
   }
   .ball:disabled,
   .ball[disabled]{
@@ -33,7 +38,8 @@
 
 .ball {
   position: absolute;
-
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw25WV2IbMoKhpynIjLpccjQsR9jRQuGJwMA&usqp=CAU");
+  background-size: 100% 100%;
   border-radius: 50%;
   top: 0;
   left: 0;
@@ -48,7 +54,12 @@
   font-size: 25px;
   font-family: cursive;
   .level {
-    color: crimson;
+    color: antiquewhite;
+    background-color: black;
+  }
+  .click {
+    background-color: aquamarine;
+    color: black;
   }
 }
 
