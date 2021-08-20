@@ -9,8 +9,8 @@ export class SquareComponent {
   level: number = 1;
   click: number = 0;
   isDisable: boolean = true;
-  top:number = 50;
-  left:number = 50;
+  top:number = 264;
+  left:number = 545;
   time:number = 1000;
   height:number = 200;
   width:number = 200;
@@ -36,7 +36,7 @@ export class SquareComponent {
     this.isDisable = false;
     setTimeout(() => {
       this.top = Math.random() * (window.innerHeight - 200);
-      this.left = Math.random() * (window.innerHeight * 0.8 - 200);
+      this.left = Math.random() * (window.innerHeight * 0.8 - -100);
       this.start()
     },this.time)
   }
